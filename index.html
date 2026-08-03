@@ -84,5 +84,46 @@
   <strong>Conservice Instructional Design</strong> · Internal Use Only
 </footer>
 
+<script>
+  const searchInput = document.getElementById('kbSearch');
+  const sectionLabels = document.querySelectorAll('.section-label');
+
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.trim().toLowerCase();
+
+    sectionLabels.forEach(label => {
+      const grid = label.nextElementSibling;
+      let anyVisible = false;
+
+      grid.querySelectorAll('.article-card').forEach(card => {
+        const name = card.querySelector('.article-name').textContent.toLowerCase();
+        const match = query === '' || name.includes(query);
+        card.style.display = match ? '' : 'none';
+        if (match) anyVisible = true;
+      });
+
+      label.style.display = anyVisible ? '' : 'none';
+      grid.style.display = anyVisible ? '' : 'none';
+    });
+  });
+
+  // Cmd/Ctrl+K focuses search, matching the placeholder hint
+  document.addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+      e.preventDefault();
+      searchInput.focus();
+    }
+  });
+
+  // Esc clears and unfocuses
+  searchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      searchInput.value = '';
+      searchInput.dispatchEvent(new Event('input'));
+      searchInput.blur();
+    }
+  });
+</script>
+
 </body>
 </html>
