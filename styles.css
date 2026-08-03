@@ -400,8 +400,6 @@ a { color: var(--blue); }
 
 /* ---------- Footer strip + revision history ---------- */
 .article-footer { padding: 8px 0 30px; }
-.footer-suggest { font-size: 13.5px; color: var(--muted); padding-bottom: 14px; }
-.footer-suggest a { color: var(--blue); font-weight: 500; }
 
 .revhist { background: var(--bg-panel); border: 1px solid var(--hairline); border-radius: 10px; }
 .revhist > summary {
@@ -582,6 +580,45 @@ footer.kb-footer a:hover { color: #fff; }
   .topnav nav { width: 100%; overflow-x: auto; }
   .kb-hero { padding: 34px 20px 42px; }
 }
+
+/* ============================================================
+   EMAIL TEMPLATE CARD
+   ============================================================ */
+.email-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--hairline);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 18px 0;
+}
+.email-card-head {
+  background: var(--navy);
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase;
+  display: flex; align-items: center; gap: 8px;
+}
+.email-meta { border-bottom: 1px solid var(--hairline); }
+.email-meta-row {
+  display: flex; align-items: baseline; gap: 14px;
+  padding: 9px 18px; border-top: 1px solid var(--hairline);
+  font-size: 13.5px;
+}
+.email-meta-row:first-child { border-top: none; }
+.email-meta-row .em-label {
+  width: 56px; flex-shrink: 0;
+  font-weight: 700; color: var(--muted);
+  font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em;
+}
+.email-meta-row .em-value { color: var(--ink); }
+.email-body { padding: 16px 18px; font-size: 14.5px; line-height: 1.7; }
+.email-body p { margin: 0 0 10px; }
+.email-body p:last-child { margin-bottom: 0; }
+.email-body strong { color: var(--navy); }
+.email-body .em-list { margin: 8px 0 8px 20px; padding: 0; }
+.email-body .em-list li { margin-bottom: 4px; }
+.email-body a { font-weight: 500; }
 
 /* ============================================================
    REFERENCE TABLES
