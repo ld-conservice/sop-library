@@ -9,7 +9,7 @@
 <body>
 
 <div class="topnav">
-  <div class="brand">🦙 Conservice ID Knowledge Base</div>
+  <a href="index.html" class="brand">🦙 Conservice ID Knowledge Base</a>
   <nav>
     <a href="#start-here">Start Here</a>
     <a href="#running-a-project">Running a Project</a>
@@ -18,110 +18,131 @@
     <a href="#performance-growth">Performance &amp; Growth</a>
     <a href="#reference-library">Reference Library</a>
   </nav>
-  <input class="search" type="text" placeholder="Search articles ⌘K" id="kbSearch">
 </div>
 
-<div class="hero">
-  <h1>Everything you need to run a project in Llama Land</h1>
-  <p>SOPs, templates, and tools for the Conservice Instructional Design team. Find what you need by what you're trying to do, not by document type.</p>
+<div class="kb-hero">
+  <div class="eyebrow">Instructional Design team · internal</div>
+  <div class="kb-search-wrap">
+    <span class="kb-search-icon">🔍</span>
+    <input class="kb-search" id="kbSearch" type="text" placeholder="Search for a task, phase, or template…" autofocus autocomplete="off">
+  </div>
+  <div class="kb-search-hint">Type to filter every article, or browse the categories below</div>
 </div>
 
-<div class="grid-section">
+<div class="kb-body">
+  <div class="kb-count" id="kbCount">1 article + the ID Toolkit available · 24 in progress</div>
+  <div class="no-results" id="noResults">No articles match that search. Try a different term.</div>
 
-  <div class="section-label" id="start-here">Start Here</div>
-  <div class="articles-grid">
-    <a href="#" class="article-card soon card-blue"><div class="article-name">How Llama Land Is Organized</div><span class="article-tag tag-soon">Coming soon</span></a>
-    <a href="#" class="article-card soon card-blue"><div class="article-name">Work Hierarchy Standards</div><span class="article-tag tag-soon">Coming soon</span></a>
-    <a href="#" class="article-card soon card-blue"><div class="article-name">File Naming Conventions</div><span class="article-tag tag-soon">Coming soon</span></a>
-    <a href="#" class="article-card soon card-blue"><div class="article-name">Subitem Naming &amp; Modality Standards</div><span class="article-tag tag-soon">Coming soon</span></a>
-  </div>
+  <!-- START HERE -->
+  <section class="cat cat-c-blue" id="start-here">
+    <div class="cat-head"><span class="cat-accent"></span><h2>Start Here</h2></div>
+    <p class="cat-desc">New to the team or the board? Learn how the system works.</p>
+    <ul class="art-list">
+      <li><span class="art-soon" data-title="How Llama Land Is Organized">How Llama Land Is Organized <span class="badge">Soon</span></span></li>
+      <li><span class="art-soon" data-title="Work Hierarchy Standards Project Deliverable Task">Work Hierarchy Standards <span class="badge">Soon</span></span></li>
+      <li><span class="art-soon" data-title="File Naming Conventions">File Naming Conventions <span class="badge">Soon</span></span></li>
+      <li><span class="art-soon" data-title="Subitem Naming Modality Standards">Subitem Naming &amp; Modality Standards <span class="badge">Soon</span></span></li>
+    </ul>
+  </section>
 
-  <div class="section-label" id="running-a-project">Running a Project</div>
-  <div class="articles-grid">
-    <a href="/learning-strategy-session/" class="article-card ready card-green"><div class="article-name">Learning Strategy Session</div></a>
-    <a href="#" class="article-card soon card-green"><div class="article-name">Building the Project Proposal</div><span class="article-tag tag-soon">Coming soon</span></a>
-    <a href="#" class="article-card soon card-green"><div class="article-name">Managing the Design Phase</div><span class="article-tag tag-soon">Coming soon</span></a>
-    <a href="#" class="article-card soon card-green"><div class="article-name">Internal Review</div><span class="article-tag tag-soon">Coming soon</span></a>
-    <a href="#" class="article-card soon card-green"><div class="article-name">Launch &amp; Closeout</div><span class="article-tag tag-soon">Coming soon</span></a>
-  </div>
+  <!-- RUNNING A PROJECT -->
+  <section class="cat cat-c-green" id="running-a-project">
+    <div class="cat-head"><span class="cat-accent"></span><h2>Running a Project</h2></div>
+    <p class="cat-desc">The core project lifecycle, phase by phase.</p>
+    <ul class="art-list">
+      <li><a href="learning-strategy-session.html" data-title="Learning Strategy Session Needs Analysis phase 2">Learning Strategy Session <span class="art-go">Open →</span></a></li>
+      <li><span class="art-soon" data-title="Building the Project Proposal">Building the Project Proposal <span class="badge">Soon</span></span></li>
+      <li><span class="art-soon" data-title="Managing the Design Phase">Managing the Design Phase <span class="badge">Soon</span></span></li>
+      <li><span class="art-soon" data-title="Internal Review quality gate">Internal Review <span class="badge">Soon</span></span></li>
+      <li><span class="art-soon" data-title="Launch and Closeout">Launch &amp; Closeout <span class="badge">Soon</span></span></li>
+    </ul>
+  </section>
 
-  <div class="section-label" id="stakeholder-communication">Stakeholder Communication</div>
-  <div class="articles-grid">
-    <a href="#" class="article-card soon card-orange"><div class="article-name">Project Proposal Review</div><span class="article-tag tag-soon">Coming soon</span></a>
-    <a href="#" class="article-card soon card-orange"><div class="article-name">Content Outline Review</div><span class="article-tag tag-soon">Coming soon</span></a>
-    <a href="#" class="article-card soon card-orange"><div class="article-name">Prototype Review</div><span class="article-tag tag-soon">Coming soon</span></a>
-    <a href="#" class="article-card soon card-orange"><div class="article-name">Final Review</div><span class="article-tag tag-soon">Coming soon</span></a>
-    <a href="#" class="article-card soon card-orange"><div class="article-name">Weekly Project Update</div><span class="article-tag tag-soon">Coming soon</span></a>
-    <a href="#" class="article-card soon card-orange"><div class="article-name">Project Completion &amp; Wrap-up</div><span class="article-tag tag-soon">Coming soon</span></a>
-  </div>
+  <!-- STAKEHOLDER COMMUNICATION -->
+  <section class="cat cat-c-orange" id="stakeholder-communication">
+    <div class="cat-head"><span class="cat-accent"></span><h2>Stakeholder Communication</h2></div>
+    <p class="cat-desc">Email templates and review workflows for every touchpoint.</p>
+    <ul class="art-list">
+      <li><span class="art-soon" data-title="Project Proposal Review">Project Proposal Review <span class="badge">Soon</span></span></li>
+      <li><span class="art-soon" data-title="Content Outline Review">Content Outline Review <span class="badge">Soon</span></span></li>
+      <li><span class="art-soon" data-title="Prototype Review">Prototype Review <span class="badge">Soon</span></span></li>
+      <li><span class="art-soon" data-title="Final Review">Final Review <span class="badge">Soon</span></span></li>
+      <li><span class="art-soon" data-title="Weekly Project Update Friday stakeholder email">Weekly Project Update <span class="badge">Soon</span></span></li>
+      <li><span class="art-soon" data-title="Project Completion Wrap-up">Project Completion &amp; Wrap-up <span class="badge">Soon</span></span></li>
+    </ul>
+  </section>
 
-  <div class="section-label" id="special-situations">Special Situations</div>
-  <div class="articles-grid">
-    <a href="#" class="article-card soon card-blue"><div class="article-name">Rush Request Handling</div><span class="article-tag tag-soon">Coming soon</span></a>
-    <a href="#" class="article-card soon card-blue"><div class="article-name">Extension Requests</div><span class="article-tag tag-soon">Coming soon</span></a>
-    <a href="#" class="article-card soon card-blue"><div class="article-name">Handling Revision Cycles</div><span class="article-tag tag-soon">Coming soon</span></a>
-    <a href="#" class="article-card soon card-blue"><div class="article-name">Complexity &amp; Readiness Scoring</div><span class="article-tag tag-soon">Coming soon</span></a>
-  </div>
+  <!-- SPECIAL SITUATIONS -->
+  <section class="cat cat-c-blue" id="special-situations">
+    <div class="cat-head"><span class="cat-accent"></span><h2>Special Situations</h2></div>
+    <p class="cat-desc">Exceptions to the standard flow: rush, extensions, revisions.</p>
+    <ul class="art-list">
+      <li><span class="art-soon" data-title="Rush Request Handling expedited compressed timeline">Rush Request Handling <span class="badge">Soon</span></span></li>
+      <li><span class="art-soon" data-title="Extension Requests">Extension Requests <span class="badge">Soon</span></span></li>
+      <li><span class="art-soon" data-title="Handling Revision Cycles">Handling Revision Cycles <span class="badge">Soon</span></span></li>
+      <li><span class="art-soon" data-title="Complexity Readiness Scoring rubric">Complexity &amp; Readiness Scoring <span class="badge">Soon</span></span></li>
+    </ul>
+  </section>
 
-  <div class="section-label" id="performance-growth">Performance &amp; Growth</div>
-  <div class="articles-grid">
-    <a href="#" class="article-card soon card-green"><div class="article-name">Monthly Standards of Excellence (SOE)</div><span class="article-tag tag-soon">Coming soon</span></a>
-  </div>
+  <!-- PERFORMANCE & GROWTH -->
+  <section class="cat cat-c-green" id="performance-growth">
+    <div class="cat-head"><span class="cat-accent"></span><h2>Performance &amp; Growth</h2></div>
+    <p class="cat-desc">Evaluation and professional development.</p>
+    <ul class="art-list">
+      <li><span class="art-soon" data-title="Monthly Standards of Excellence SOE self evaluation">Monthly Standards of Excellence (SOE) <span class="badge">Soon</span></span></li>
+    </ul>
+  </section>
 
-  <div class="section-label" id="reference-library">Reference Library</div>
-  <div class="articles-grid">
-    <a href="#" class="article-card soon card-orange"><div class="article-name">ID Project Prioritization SOP</div><span class="article-tag tag-soon">Coming soon</span></a>
-    <a href="#" class="article-card soon card-orange"><div class="article-name">Llama Land Automation Reference Guide</div><span class="article-tag tag-soon">Coming soon</span></a>
-    <a href="#" class="article-card soon card-orange"><div class="article-name">Llamaland Designer Reference Guide</div><span class="article-tag tag-soon">Coming soon</span></a>
-    <a href="#" class="article-card soon card-orange"><div class="article-name">ID Toolkit</div><span class="article-tag tag-soon">Coming soon</span></a>
-    <a href="#" class="article-card soon card-orange"><div class="article-name">Llama Land 2.1 — Clarifying Our Design Process</div><span class="article-tag tag-soon">Coming soon</span></a>
-    <a href="#" class="article-card soon card-orange"><div class="article-name">LD Naming Convention Master</div><span class="article-tag tag-soon">Coming soon</span></a>
-  </div>
-
+  <!-- REFERENCE LIBRARY -->
+  <section class="cat cat-c-orange" id="reference-library">
+    <div class="cat-head"><span class="cat-accent"></span><h2>Reference Library</h2></div>
+    <p class="cat-desc">Source-of-truth master documents, linked from articles above.</p>
+    <ul class="art-list">
+      <li><span class="art-soon" data-title="ID Project Prioritization SOP scoring priority tiers">ID Project Prioritization SOP <span class="badge">Soon</span></span></li>
+      <li><span class="art-soon" data-title="Llama Land Automation Reference Guide">Llama Land Automation Reference Guide <span class="badge">Soon</span></span></li>
+      <li><span class="art-soon" data-title="Llamaland Designer Reference Guide board mechanics">Llamaland Designer Reference Guide <span class="badge">Soon</span></span></li>
+      <li><a href="https://tools-n-things.github.io/id-toolkit/" data-title="ID Toolkit complexity scorer estimator planner reverse calendar">ID Toolkit <span class="art-go">Open →</span></a></li>
+      <li><span class="art-soon" data-title="Llama Land 2.1 Clarifying Our Design Process">Llama Land 2.1 — Clarifying Our Design Process <span class="badge">Soon</span></span></li>
+      <li><span class="art-soon" data-title="LD Naming Convention Master">LD Naming Convention Master <span class="badge">Soon</span></span></li>
+    </ul>
+  </section>
 </div>
 
-<footer>
-  <strong>Conservice Instructional Design</strong> · Internal Use Only
-</footer>
+<footer class="kb-footer"><strong>Conservice Instructional Design</strong> · Internal Use Only</footer>
 
 <script>
-  const searchInput = document.getElementById('kbSearch');
-  const sectionLabels = document.querySelectorAll('.section-label');
+  const search = document.getElementById('kbSearch');
+  const cats = document.querySelectorAll('.cat');
+  const noResults = document.getElementById('noResults');
+  const countLine = document.getElementById('kbCount');
 
-  searchInput.addEventListener('input', () => {
-    const query = searchInput.value.trim().toLowerCase();
+  search.addEventListener('input', () => {
+    const q = search.value.trim().toLowerCase();
+    let anyMatch = false;
 
-    sectionLabels.forEach(label => {
-      const grid = label.nextElementSibling;
-      let anyVisible = false;
-
-      grid.querySelectorAll('.article-card').forEach(card => {
-        const name = card.querySelector('.article-name').textContent.toLowerCase();
-        const match = query === '' || name.includes(query);
-        card.style.display = match ? '' : 'none';
-        if (match) anyVisible = true;
+    cats.forEach(cat => {
+      let catHasMatch = false;
+      cat.querySelectorAll('.art-list li').forEach(li => {
+        const el = li.querySelector('[data-title]');
+        const hay = el.getAttribute('data-title').toLowerCase();
+        const show = q === '' || hay.includes(q);
+        li.style.display = show ? '' : 'none';
+        if (show) catHasMatch = true;
       });
-
-      label.style.display = anyVisible ? '' : 'none';
-      grid.style.display = anyVisible ? '' : 'none';
+      cat.style.display = catHasMatch ? '' : 'none';
+      if (catHasMatch) anyMatch = true;
     });
+
+    noResults.style.display = anyMatch ? 'none' : 'block';
+    countLine.style.display = q === '' ? '' : 'none';
   });
 
-  // Cmd/Ctrl+K focuses search, matching the placeholder hint
-  document.addEventListener('keydown', (e) => {
-    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
-      e.preventDefault();
-      searchInput.focus();
-    }
+  // Cmd/Ctrl+K focuses search; Esc clears
+  document.addEventListener('keydown', e => {
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); search.focus(); }
   });
-
-  // Esc clears and unfocuses
-  searchInput.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      searchInput.value = '';
-      searchInput.dispatchEvent(new Event('input'));
-      searchInput.blur();
-    }
+  search.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { search.value = ''; search.dispatchEvent(new Event('input')); search.blur(); }
   });
 </script>
 
