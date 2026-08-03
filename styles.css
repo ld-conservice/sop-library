@@ -582,3 +582,61 @@ footer.kb-footer a:hover { color: #fff; }
   .topnav nav { width: 100%; overflow-x: auto; }
   .kb-hero { padding: 34px 20px 42px; }
 }
+
+/* ============================================================
+   REFERENCE TABLES
+   ============================================================ */
+.ref-table-wrap { overflow-x: auto; margin: 18px 0; }
+.ref-table {
+  width: 100%; border-collapse: collapse;
+  background: var(--bg-panel);
+  border: 1px solid var(--hairline);
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 14.5px;
+}
+.ref-table thead th {
+  background: var(--navy);
+  color: #fff;
+  text-align: left;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 11px 16px;
+  white-space: nowrap;
+}
+.ref-table tbody td {
+  padding: 11px 16px;
+  border-top: 1px solid var(--hairline);
+  vertical-align: top;
+}
+.ref-table tbody tr:nth-child(even) { background: #fbfaf7; }
+.ref-table tbody td:first-child { font-weight: 500; color: var(--navy); white-space: nowrap; }
+
+/* "Instead of this / Use this" comparison table */
+.ref-table.compare tbody td:first-child {
+  color: var(--muted); font-weight: 400;
+  text-decoration: line-through; text-decoration-color: var(--red-orange);
+}
+.ref-table.compare tbody td:last-child {
+  font-family: var(--font-mono); font-size: 13px; color: var(--navy);
+}
+
+/* Flag the row that requires a note */
+.ref-table tbody tr.needs-note td:first-child { color: var(--red-deep); }
+.ref-table tbody tr.needs-note { background: var(--warn-bg) !important; }
+
+/* Format spec block */
+.spec {
+  background: var(--navy);
+  color: #fff;
+  font-family: var(--font-mono); font-size: 14px;
+  padding: 14px 18px; border-radius: 8px;
+  margin: 14px 0; overflow-x: auto;
+}
+.spec .spec-var { color: var(--orange); }
+
+@media (max-width: 720px) {
+  .ref-table { font-size: 13.5px; }
+  .ref-table thead th, .ref-table tbody td { padding: 9px 12px; }
+  .ref-table tbody td:first-child { white-space: normal; }
+}
