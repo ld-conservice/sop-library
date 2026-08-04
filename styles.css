@@ -115,6 +115,7 @@ a { color: var(--blue); }
   color: rgba(255,255,255,.6);
   font-family: var(--font); font-size: 12.5px;
   cursor: pointer;
+  text-decoration: none;
   transition: border-color .15s, color .15s;
 }
 .search-btn:hover { border-color: rgba(255,255,255,.3); color: #fff; }
